@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sistema Académico</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.css" crossorigin="anonymous"/>
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" /> <!-- NO IDEA IF KEEPING THIS LINE-->
+    </environment>
+</head>
+<body>
+    <!--<nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Sistema</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a></li>
+                    <li><a asp-area="" asp-controller="Categorias" asp-action="Index">Categorías</a></li>
+                    <li><a asp-area="" asp-controller="Categorias" asp-action="Index">Cursos</a></li>
+                    <li><a asp-area="" asp-controller="Estudiantes" asp-action="Index">Estudiantes</a></li>
+                    <li><a asp-area="" asp-controller="Intrusctores" asp-action="Index">Intrusctores</a></li>
+                    <li><a asp-area="" asp-controller="Asignaciones" asp-action="Index">Asignaciones</a></li>
+                    <li><a asp-area="" asp-controller="Matriculas" asp-action="Index">Matriculas</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">Acerca de</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Sistema</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Categorias" asp-action="Index">Categorías</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Categorias" asp-action="Index">Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Estudiantes" asp-action="Index">Estudiantes</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Intrusctores" asp-action="Index">Intrusctores</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Asignaciones" asp-action="Index">Asignaciones</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Matriculas" asp-action="Index">Matriculas</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">Acerca de</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contacto</a></li>
+            </ul>
+            <!--
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button type="button" class="btn btn-light" type="submit">Search</button>
+            </form>
+            -->
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2018 - WebApplication1</p>
+        </footer>
+    </div>
+
+    <environment include="Development">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script> <!--NOT SURE IF KEEPING THIS LINE-->
+    </environment>
+    <environment exclude="Development">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script> <!--NOT SURE IF KEEPING THIS LINE-->
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

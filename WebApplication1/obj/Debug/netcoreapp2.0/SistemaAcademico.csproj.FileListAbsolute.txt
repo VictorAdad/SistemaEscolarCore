@@ -1,0 +1,11 @@
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\bin\Debug\netcoreapp2.0\SistemaAcademico.deps.json
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\bin\Debug\netcoreapp2.0\SistemaAcademico.runtimeconfig.json
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\bin\Debug\netcoreapp2.0\SistemaAcademico.runtimeconfig.dev.json
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\bin\Debug\netcoreapp2.0\SistemaAcademico.dll
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\bin\Debug\netcoreapp2.0\SistemaAcademico.pdb
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\obj\Debug\netcoreapp2.0\SistemaAcademico.csprojAssemblyReference.cache
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\obj\Debug\netcoreapp2.0\SistemaAcademico.csproj.CoreCompileInputs.cache
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\obj\Debug\netcoreapp2.0\SistemaAcademico.AssemblyInfoInputs.cache
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\obj\Debug\netcoreapp2.0\SistemaAcademico.AssemblyInfo.cs
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\obj\Debug\netcoreapp2.0\SistemaAcademico.dll
+C:\Users\DDIAA\Documents\Proyectos\Core1\WebApplication1\obj\Debug\netcoreapp2.0\SistemaAcademico.pdb
